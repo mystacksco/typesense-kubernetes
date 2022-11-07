@@ -23,19 +23,20 @@ patches:
       value: "10Gi"
     - op: replace
       path: /spec/template/spec/containers/0/resources/requests/memory
-      value: "112Mi"
+      value: "512Mi"
     - op: replace
       path: /spec/template/spec/containers/0/resources/requests/cpu
       value: "128m"
     - op: replace
       path: /spec/template/spec/containers/0/resources/limits/memory
-      value: "512Mi"
+      value: "1024Mi"
     - op: replace
       path: /spec/template/spec/containers/0/resources/limits/cpu
       value: "1024m"
     - op: replace
       path: /spec/template/spec/containers/0/command/4
       value: Mycomplexpassword#6546
+
 
 # Add to the nodes list here if you change the number of replicas in statefulset
 - target:
